@@ -2,10 +2,11 @@
 <html>
     <head>
 		<meta charset="Big5-HKSCS"/>
-		<title>
-			Testing Webpage
-		</title>
-		<link rel="stylesheet" href="style.css"/>
+		<meta name="description" content="測試用網站，寫滿一堆狗屁東西"/>
+		<meta name="author" content="SupaRaccoon"/>
+		<meta name="keywords" content="SupaRaccoon"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!--調整使用不同裝置瀏覽網頁時的顯示比例-->
+		<title>Testing Webpage</title>
     </head>
     <body>
 		<h1>大大的標題</h1>
@@ -23,9 +24,12 @@
 		<img src="pic/SSRB profile.png" height="200" title="SSRB"/>
 		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgaqqzyY94NgXQxN-8ct_FBPFKyT6srFZGPYkVkjb89cFp4eiQb19os0p2oeeBRHt8cJA&usqp=CAU" alt="pingu" width="200" title="angry pingu"/>
 		<br/>
-		<a href="pic/SSRB profile.png">SSRB</a>
-		<a href="https://google.com">股溝</a>
-		<a href="page2.html" target="_blank">下一頁</a>
+		<a href="pic/SSRB profile.png" target="_blank">SSRB</a>
+		<a href="https://google.com" target="_blank">股溝</a>
+		<a href="page2.html">下一頁</a>
+		<a href="css examples.html" target="_blank">
+			<input type="button" value="CSS 練習區">
+		</a>
 		<hr/>
 
 		<!--影片連結 & yt 嵌入-->
@@ -34,28 +38,32 @@
 		<h3>Penguins</h3>
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/bhHTh7SmeaM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 		
-		<!--表格 & 列表-->
-		<h3>Cute Animals</h3>
-		<ol type="I">	<!-- ol: organized, ul: unorganized -->
-			<li>Raccoon</li>
-			<li>Penguin</li>
-			<li>Parrot</li>
-		</ol>
+		<!--表格 & 列表 + div & span-->
+		<span style="color: #e7952a;">
+			<h3>Cute Animals</h3>
+			<ol type="I">	<!-- ol: organized, ul: unorganized -->
+				<li>Raccoon</li>
+				<li>Penguin</li>
+				<li>Parrot</li>
+			</ol>
+		</span>
 
-		<h3>Cuteness Points</h3>
-		<table width="300">  <!-- tr: 列內容, td: 行內容 -->
-			<tr>
-				<td>Raccoon</td>
-				<td>Penguin</td>
-				<td>Parrot</td>
-			</tr>
-			<tr>
-				<td>100</td>
-				<td>100</td>
-				<td>100</td>
-			</tr>
-		</table>
-	
+		<div style="color: #8919f1;">		<!-- div/span 差別在div使用全寬(block)，span使用動態寬度(inline)-->
+			<h3>Cuteness Points</h3>
+			<table width="300">  <!-- tr: 列內容, td: 行內容 -->
+				<tr>
+					<td>Raccoon</td>
+					<td>Penguin</td>
+					<td>Parrot</td>
+				</tr>
+				<tr>
+					<td>100</td>
+					<td>100</td>
+					<td>100</td>
+				</tr>
+			</table>
+		</div>
+
 
 	</body>
 </html>

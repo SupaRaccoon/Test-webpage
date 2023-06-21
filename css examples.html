@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="Big5-HKSCS"/>
+        <title>CSS examples</title>
+		<link rel="stylesheet" href="style.css">
+    </head>
+    <body style="height: 2000px;">
+		<h1 style="display:inline">CSS examples  </h1>
+		<a href="webpage.html">回家囉</a>
+		<hr/>
+		<div style="padding: 15px; margin: 20px; background-color:rgb(176, 207, 243); border: 2px dashed rgb(27, 87, 143);width: auto;">
+			<p class="content">padding: 內文與邊框距離 (順序:上右下左,順時鐘)  margin: 邊框與附近內容距離</p>
+		</div>
+		<br><hr>
+
+		<img src="pic/raccoon.jpg" alt="Raccoon" width="300px" style="float: left; position:relative; bottom:-8px;">
+		<p id="raccoon-info">
+			&nbsp;&nbsp;浣熊通常重5.5到9.5公斤，但有記載的最重的可達28公斤。
+			眼睛周圍為黑色，尾有5-6個黑色環紋，體長65至75厘米，尾長約25厘米，皮毛的大部分為灰色，也有部分為棕色和黑色。也有罕見的白化種。
+			<br>&nbsp;&nbsp;浣熊是夜行性動物。雜食性，食物有水果、昆蟲、鳥蛋和其他小動物。雖然是野生動物，但浣熊非常適應人類城市的生活，有些族群以都市為棲地，
+			生活在近郊的浣熊常會潛入人類住處偷竊食物，加上眼睛週遭的黑色條紋特徵，因此被稱為「小偷熊貓」(panda thief)。
+			浣熊的視覺並不發達，因此需要用觸覺來辨別物體。但是前爪上有一層角質層，有時候需要浸在水裡使其軟化來提高靈敏度，所以看起來就像是把食物或者其他物品清洗乾淨。
+		</p>
+		<hr>
+
+		<div style="position:relative; padding: 40px; margin: 30px; border: 4mm ridge rgb(255, 172, 186); outline: rgb(78, 68, 50) solid 8px;
+					border-radius: 4px; outline-offset: 4px; box-shadow: 0 0 0 4px skyblue;">
+			<div style="position:relative; padding:30px; border: 4px dotted rgb(255, 172, 186)">
+				<p class="content">position absolute 以全網頁範圍為基準， 但若被父層為 relative，會以父層範圍為基準</p>
+				<p class="content">border-radius 用於邊界角落變圓弧。參數: 左上 | 右上 | 右下 | 左下 or 左上右下 | 右上左下。可用比例方式(/)調整弧度，x方向 / y方向 ，<br>
+					也可寫成 X1 X2 / Y ; X1 X2 / Y1 Y2 分別控制 左上右下 & 右上左下</p>
+				<p class="content">box-shadow 用於製造影子效果。參數: 向右位移量 | 向下位移量 | 模糊量 | 比物件大多少量</p>
+				<img src="pic/SSRB profile.png" width="80px" style="position: absolute; bottom: 0px; right: 5px;">
+			</div>
+			<div style="position:absolute; bottom:0px; left: 60px;  opacity: 0.8; width: 30px; height: 30px; background-color: mediumpurple;"></div>
+		</div>
+		
+		<div class="container" style="position: fixed; bottom: 0px; left: 0px; line-height: 70px; height: 70px; width: 100%; background-color:rgb(186, 202, 202)">
+			<!-- 固定顯示位置的浮動區域 -->
+			<div class="box-1">看左邊</div>
+			<div class="box-2">看中間</div>
+			<div class="box-3">看右邊</div>
+		</div>
+
+    </body>
+</html>
